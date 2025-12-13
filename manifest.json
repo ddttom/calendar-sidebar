@@ -5,7 +5,8 @@
   "description": "View your Google Calendar events in a sidebar",
   "permissions": [
     "identity",
-    "storage"
+    "storage",
+    "sidePanel"
   ],
   "host_permissions": [
     "https://www.googleapis.com/*"
@@ -29,7 +30,7 @@
     "service_worker": "background.js"
   },
   "oauth2": {
-    "client_id": "YOUR_CLIENT_ID.apps.googleusercontent.com",
+    "client_id": "733828619964-28cfc9tm7i4jkc1sohi0gbeqn2t92tbn.apps.googleusercontent.com",
     "scopes": [
       "https://www.googleapis.com/auth/calendar.readonly"
     ]
