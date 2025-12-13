@@ -1,0 +1,25 @@
+{
+  "name": "calendar-sidebar",
+  "version": "1.0.0",
+  "description": "A Microsoft Edge/Chrome extension that displays your Google Calendar events in a permanent sidebar.",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ddttom/calendar-sidebar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ddttom/calendar-sidebar/issues"
+  },
+  "homepage": "https://github.com/ddttom/calendar-sidebar#readme",
+  "devDependencies": {
+    "eslint": "^9.39.2",
+    "prettier": "^3.7.4"
+  }
+}
