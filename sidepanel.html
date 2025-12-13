@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Calendar Events</title>
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Google Calendar</h1>
+    
+    <div id="authSection" class="auth-section" style="display: none;">
+      <p>Sign in to view your calendar events</p>
+      <button id="signInBtn">Sign in with Google</button>
+    </div>
+
+    <div id="mainSection" style="display: none;">
+      <div class="controls">
+        <button id="refreshBtn">Refresh Events</button>
+        <button id="signOutBtn" class="sign-out-btn">Sign Out</button>
+      </div>
+
+      <div class="filter-section">
+        <label>
+          <input type="checkbox" id="showPast" />
+          Show past events
+        </label>
+        <label>
+          Days to show: 
+          <select id="daysSelect">
+            <option value="1">Today</option>
+            <option value="7" selected>Next 7 days</option>
+            <option value="14">Next 14 days</option>
+            <option value="30">Next 30 days</option>
+          </select>
+        </label>
+      </div>
+
+      <div id="loadingIndicator" style="display: none;">Loading events...</div>
+      <div id="eventsList"></div>
+    </div>
+  </div>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>
