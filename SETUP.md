@@ -102,4 +102,22 @@ If you encounter issues:
 
 1. Check the browser console for error messages (F12 > Console)
 2. Verify all setup steps were completed correctly
-3. Make sure you're using Edge 114+ or Chrome 114+
+
+## Sharing with Others
+
+To share this extension with another person (e.g., a family member):
+
+1.  **Send the Code**: Zip the project folder (excluding `node_modules` and `.git`) and send it to them.
+2.  **Load the Extension**:
+    - They should unzip it and "Load unpacked" in `chrome://extensions`.
+    - **Crucial**: Chrome will assign them a **unique Extension ID** (different from yours).
+3.  **Get Their ID**: Ask them to copy their specific Extension ID from `chrome://extensions`.
+4.  **Create Credentials**:
+    - Go to your Google Cloud Console > Credentials.
+    - Create a **new** OAuth Client ID for "Chrome extension".
+    - Use **their** Extension ID.
+5.  **Update Manifest**:
+    - Send them the new **Client ID**.
+    - They must open `manifest.json` on their computer.
+    - Replace the `client_id` with the one you sent them.
+    - **Reload** the extension.
