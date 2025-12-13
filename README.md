@@ -58,6 +58,7 @@ See [SETUP.md](SETUP.md) for detailed setup instructions.
 ### Viewing Events
 
 Events are displayed in chronological order. Each event shows:
+
 - Event title
 - Date and time (or "All day" for all-day events)
 - Time remaining (e.g., "in 2 weeks", "in 3 hours")
@@ -83,7 +84,7 @@ Events are displayed in chronological order. Each event shows:
 
 ## File Structure
 
-```
+```terminal
 upcoming-events-extension/
 ├── manifest.json       # Extension configuration with OAuth settings
 ├── background.js       # Service worker for authentication

@@ -4,7 +4,7 @@ This extension requires Google OAuth credentials to access your Google Calendar.
 
 ## Step 1: Create a Google Cloud Project
 
-1. Go to the [Google Cloud Console](https://console.cloud.google.com/)
+1. Go to the [Google Cloud Console](<https://github.com/ddttom/calendar-sidebar>
 2. Click "Create Project" (top bar, project dropdown)
 3. Enter a project name (e.g., "Calendar Extension")
 4. Click "Create"
@@ -68,17 +68,21 @@ This extension requires Google OAuth credentials to access your Google Calendar.
 ## Troubleshooting
 
 ### "Error 400: redirect_uri_mismatch"
+
 - Make sure you entered the correct Extension ID in the OAuth client configuration
 - The Extension ID must match exactly
 
 ### "Access blocked: This app's request is invalid"
+
 - Make sure you enabled the Google Calendar API
 - Check that you added the correct scope in the OAuth consent screen
 
 ### "This app is blocked"
+
 - Make sure you added yourself as a test user in the OAuth consent screen
 
 ### Events not loading
+
 - Click "Refresh Events"
 - Try signing out and signing back in
 - Check the browser console for errors (F12 > Console tab)
@@ -86,6 +90,7 @@ This extension requires Google OAuth credentials to access your Google Calendar.
 ## Privacy Note
 
 This extension:
+
 - Only requests read-only access to your calendar
 - Runs entirely in your browser
 - Does not send your data to any external servers
@@ -94,6 +99,7 @@ This extension:
 ## Support
 
 If you encounter issues:
+
 1. Check the browser console for error messages (F12 > Console)
 2. Verify all setup steps were completed correctly
 3. Make sure you're using Edge 114+ or Chrome 114+
