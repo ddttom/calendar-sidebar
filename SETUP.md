@@ -43,7 +43,7 @@ This extension requires Google OAuth credentials to access your Google Calendar.
 1. In Edge (or Chrome), go to `edge://extensions/`
 2. Enable "Developer mode"
 3. Click "Load unpacked"
-4. Select the `upcoming-events-extension` folder
+4. Select the folder where you unzipped the extension (the folder containing `manifest.json`)
 5. Copy the Extension ID shown under the extension name
 6. Go back to Google Cloud Console
 7. Paste the Extension ID into the "Item ID" field

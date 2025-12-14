@@ -35,7 +35,7 @@ See [SETUP.md](SETUP.md) for detailed setup instructions.
 1. Open Edge and navigate to `edge://extensions/`
 2. Enable "Developer mode" using the toggle on the left sidebar
 3. Click "Load unpacked"
-4. Select the `upcoming-events-extension` folder
+4. Select the folder where you unzipped the extension (the folder containing `manifest.json`)
 5. The extension icon will appear in your Edge toolbar
 
 ### For Chrome
@@ -43,7 +43,7 @@ See [SETUP.md](SETUP.md) for detailed setup instructions.
 1. Open Chrome and navigate to `chrome://extensions/`
 2. Enable "Developer mode" using the toggle in the top right
 3. Click "Load unpacked"
-4. Select the `upcoming-events-extension` folder
+4. Select the folder where you unzipped the extension (the folder containing `manifest.json`)
 5. The extension icon will appear in your Chrome toolbar
 
 ## Usage
@@ -85,7 +85,7 @@ Events are displayed in chronological order. Each event shows:
 ## File Structure
 
 ```terminal
-upcoming-events-extension/
+calendar-sidebar/
 ├── manifest.json       # Extension configuration with OAuth settings
 ├── background.js       # Service worker for authentication
 ├── sidepanel.html      # UI structure
