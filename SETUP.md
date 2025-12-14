@@ -4,7 +4,7 @@ This extension requires Google OAuth credentials to access your Google Calendar.
 
 ## Step 1: Create a Google Cloud Project
 
-1. Go to the [Google Cloud Console](<https://github.com/ddttom/calendar-sidebar>
+1. Go to the [Google Cloud Console](https://console.cloud.google.com/)
 2. Click "Create Project" (top bar, project dropdown)
 3. Enter a project name (e.g., "Calendar Extension")
 4. Click "Create"
@@ -107,16 +107,16 @@ If you encounter issues:
 
 To share this extension with another person (e.g., a family member):
 
-1.  **Send the Code**: Zip the project folder (excluding `node_modules` and `.git`) and send it to them.
-2.  **Load the Extension**:
+1. **Send the Code**: Zip the project folder (excluding `node_modules` and `.git`) and send it to them.
+2. **Load the Extension**:
     - They should unzip it and "Load unpacked" in `chrome://extensions`.
     - **Crucial**: Chrome will assign them a **unique Extension ID** (different from yours).
-3.  **Get Their ID**: Ask them to copy their specific Extension ID from `chrome://extensions`.
-4.  **Create Credentials**:
+3. **Get Their ID**: Ask them to copy their specific Extension ID from `chrome://extensions`.
+4. **Create Credentials**:
     - Go to your Google Cloud Console > Credentials.
     - Create a **new** OAuth Client ID for "Chrome extension".
     - Use **their** Extension ID.
-5.  **Update Manifest**:
+5. **Update Manifest**:
     - Send them the new **Client ID**.
     - They must open `manifest.json` on their computer.
     - Replace the `client_id` with the one you sent them.
